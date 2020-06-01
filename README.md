@@ -23,7 +23,6 @@ function disk_space(){
 	free_space_char_count=$[$grx_max_char_length*$free_space/$total_space]
 	used_space_char_count=$[$grx_max_char_length-$free_space_char_count]
 
-	
 	printf "U: %.2f/%.2f GB" $[$used_space/1024/1024] $[$total_space/1024/1024]
 	printf " "
 	tput setaf 1 # set color green
